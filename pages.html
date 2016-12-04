@@ -1,0 +1,13 @@
+<div class="col-sm-9 col-lg-10 pages">
+    <div>
+        
+            {{range .Pages}}
+                <div class="page" id="{{.Id}}">
+                    <a href="#{{.Id}}">
+                        <h1>{{.Title}}</h1>
+                    </a>
+                    {{.ContentValue}}
+                </div>
+            {{end}}
+    </div>
+</div>

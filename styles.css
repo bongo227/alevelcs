@@ -1,0 +1,38 @@
+.node {
+  fill: white;
+  stroke: black;
+  stroke-width: 2;
+}
+
+.clear-bottom {
+    margin-bottom: 0px;
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.page-inner {
+    max-width: 1000px;
+    border: 1px solid rgb(221, 221, 221);
+    padding: 20px;
+}
+
+.side-links {
+    margin-top: 20px;
+    list-style: none;
+    padding: 0px;
+}
+
+.side-links > li:first-child {
+    margin-bottom: 5px;
+}
+
+.side-links ul {
+    list-style: none;
+    padding: 0px;
+    margin-left: 20px;
+}

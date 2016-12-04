@@ -1,0 +1,123 @@
+<p class="lead">A finite state machine consists of a finite amount of states and a current state. The device uses the input to transition
+    from one state to the other until it reaches the accepting state (if the input is accepted). Mealy machines are a type
+    of state machine which produce outputs.</p>
+
+<div id="stateTransitionDiagram">
+    <a href="#stateTransitionDiagram">
+        <h2>State transition diagram</h2>
+    </a>
+
+    <p>
+        A state transition diagram is one way of representing a FSM. Circles represent states (labeled with its name 'S01' etc),
+        Lines represent a transition (labeled with the condition of the transition) and double-circles represents an accepting
+        state.
+    </p>
+
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="text-center">
+                <svg width="200px" height="200px" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="100" cy="100" r="50" class="node" />
+                    <text x="100" y="107.5" text-anchor="middle" font-size="20">S1</text>
+                </svg>
+            </div>
+        </div>
+
+        <div class="panel-footer">
+            FSM representing a vending machine which requires £1 in diagram form.
+        </div>
+    </div>
+</div>
+
+<div id="stateTransitionTable">
+    <a href="#stateTransitionTable">
+        <h2>State transition table</h2>
+    </a>
+
+    <p>
+        A state transition table expresses a FSM in tabula form. Input on the left, current state in the middle and next state on
+        the right.
+    </p>
+
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="">
+                <table class="table table-bordered clear-bottom">
+                    <tr>
+                        <th>Input</th>
+                        <th>Current State</th>
+                        <th>Next State</th>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>S0</td>
+                        <td>S20</td>
+                    </tr>
+                    <tr>
+                        <td>50</td>
+                        <td>S0</td>
+                        <td>S50</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="panel-footer">
+            FSM representing a vending machine which requires £1 in table form.
+        </div>
+    </div>
+</div>
+
+<div id="mealyMachines">
+    <a href="#mealyMachines">
+        <h2>Mealy Machines</h2>
+    </a>
+
+    <p>
+        Mealy machines are a subset of FSM's that produce output. This output can be represented after a '/' on a trasition on a
+        state transition diagram, or another column on a state transition table.
+    </p>
+
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="text-center">
+                <svg width="200px" height="200px" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="100" cy="100" r="50" class="node" />
+                    <text x="100" y="107.5" text-anchor="middle" font-size="20">S1</text>
+                </svg>
+            </div>
+        </div>
+
+        <div class="panel-footer">
+            Mealy machine performing a right shift in diagram form.
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="">
+                <table class="table table-bordered clear-bottom">
+                    <tr>
+                        <th>Input</th>
+                        <th>Current State</th>
+                        <th>Next State</th>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>S0</td>
+                        <td>S20</td>
+                    </tr>
+                    <tr>
+                        <td>50</td>
+                        <td>S0</td>
+                        <td>S50</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="panel-footer">
+            Mealy machine performing a right shift in table form.
+        </div>
+    </div>
+</div>
